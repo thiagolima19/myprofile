@@ -16,7 +16,7 @@ function convertTemperature() {
   try {
 
     // Check if the temperature is a valid number
-    if (!/^\d+(\.\d+)?$/.test(fahrenheitInput)) {
+    if (!/^[-]?\d+(\.\d+)?$/.test(fahrenheitInput)) {
       throw new Error("Invalid temperature. Please enter a valid number.");
     }
     // Parse the input to a number
