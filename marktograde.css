@@ -1,0 +1,47 @@
+@import "index.css"; /*this code will import the css from the index.css*/
+
+/* this code will handle some properties from mack to grade, weather and staff page */
+#mark-to-grade,
+#weatherConverter,
+#staff {
+  width: 80%;
+  height: 55vh;
+  margin: 10px auto;
+  text-align: center;
+  padding: 25px;
+}
+
+#mark-to-grade h1,
+#weatherConverter h1,
+#staff h1 {
+  padding: 10px;
+}
+
+#mark-to-grade input,
+#weatherConverter input,
+button {
+  padding: 10px;
+  font-size: 18px;
+}
+#mark-to-grade button,
+#weatherConverter button,
+#staff button {
+  border-radius: 10px;
+  border: 4px solid var(--tag-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+#mark-to-grade button:hover,
+#weatherConverter button:hover,
+#staff button:hover {
+  border-radius: 10px;
+  border: 4px solid var(--tag-color);
+  background: var(--btn-color);
+}
+
+#mark-to-grade p,
+#weatherConverter p {
+  padding: 15px;
+  font-size: 24px;
+}

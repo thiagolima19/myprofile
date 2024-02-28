@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Information</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./staff.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <nav>
+          <ul id="menu">
+            <li><a href="./index.html">About Me</a></li>
+            <li><a href="./marktograde.html">Mark to Grade</a></li>
+            <li><a href="./staff.html">Staff</a></li>
+            <li><a href="./weather.html">Weather</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="staff">
+      <div class="container">
+        <h1>Staff Information</h1>
+        <button onclick="sortBy('name')">Sort by Name</button>
+        <button onclick="sortBy('salary')">Sort by Salary</button>
+
+        <table id="staff-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>ID</th>
+              <th>Start Date</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="staff-body"></tbody>
+        </table>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <div class="footer-text">
+          <p>
+            Copyrights © Thiago Lima. Made with love based on College Project.
+          </p>
+          <p id="datetime">date and time</p>
+        </div>
+      </div>
+    </section>
+    <script src="staff.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

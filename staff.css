@@ -1,0 +1,59 @@
+@import "index.css"; /*this code will import style from index.css*/
+@import "marktograde.css"; /*this code will import style from marcktograde.css*/
+/* ------------------staff------------------ 
+this css document will provide styling to the staff page
+*/
+#staff {
+  margin: 5px auto;
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  padding: 25px;
+}
+#staff-table {
+  margin: 10px auto;
+  text-align: justify;
+}
+table,th, 
+tr,
+td {
+  border-collapse: collapse;
+  border-bottom: 2px solid var(--text-color);
+  padding: 8px ;
+  width: fit-content;
+
+}
+tr:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+#staff-table td:nth-of-type(n + 1) {
+  margin: 10px auto;
+  text-align: left;
+
+}
+#staff-table td:nth-of-type(2n-2) {
+  margin: 10px auto;
+  text-align: left;
+  
+}
+
+#staff-table td:nth-of-type(2n + 3) {
+  margin: 10px auto;
+  text-align: left;
+}
+
+#staff-table td:nth-of-type(3n + 4) {
+  margin: 10px auto;
+  text-align: center;
+}
+
+#staff-table td:nth-of-type(4n + 5) {
+  margin: 10px auto;
+  text-align: center;
+}
+
+#staff-table td:nth-of-type(5n + 6) {
+  margin: 10px auto;
+  text-align: right;
+}

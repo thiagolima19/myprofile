@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="./jQuery/jquery-3.6.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./marktograde.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <nav>
+          <ul id="menu">
+            <li><a href="./index.html">About Me</a></li>
+            <li><a href="./marktograde.html">Mark to Grade</a></li>
+            <li><a href="./staff.html">Staff</a></li>
+            <li><a href="./weather.html">Weather</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section id="weatherConverter">
+      <div class="container">
+        <h1>Temperature Converter in °F:</h1>
+        <input type="text" id="fahrenheit-input" placeholder="Fahrenheit" />
+        <button onclick="convertTemperature()">Convert</button>
+
+        <div id="result">
+          <p id="celsius-result"><span id="celsius-value"></span></p>
+          <p id="kelvin-result"><span id="kelvin-value"></span></p>
+          <p id="error-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="footer-text">
+          <p>
+            Copyrights © Thiago Lima. Made with love based on College Project.
+          </p>
+          <p id="datetime"></p>
+        </div>
+      </div>
+    </section>
+    <script src="./weather.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

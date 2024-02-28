@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marke to Grade</title>
+    <link rel="stylesheet" href="./marktograde.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <nav>
+          <ul id="menu">
+            <li><a href="./index.html">About Me</a></li>
+            <li><a href="./marktograde.html">Mark to Grade</a></li>
+            <li><a href="./staff.html">Staff</a></li>
+            <li><a href="./weather.html">Weather</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section id="mark-to-grade">
+      <div class="container">
+        <h1>Mark to Grade Converter</h1>
+        <input type="text" id="markBox" placeholder="Enter mark..." />
+        <button onclick="convertMark()">Convert</button>
+        <p id="validation-message"></p>
+        <p id="result-message"></p>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="footer-text">
+          <p>
+            Copyrights © Thiago Lima. Made with love based on College Project.
+          </p>
+          <p id="datetime"></p>
+        </div>
+      </div>
+    </section>
+    <script src="marktograde.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
